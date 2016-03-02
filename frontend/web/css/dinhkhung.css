@@ -1,0 +1,51 @@
+.top{
+    z-index: 1030;
+    position: fixed;
+    top: 0;
+    background-color: #FFF;
+    
+    width: 100%;
+}
+
+.container>img{
+    padding: 20px;
+}
+.menu{
+    background-color: #000CD1;
+    padding: 0 5%;
+}
+.menu>li a{
+    color: #FFF;
+}
+.menu>li a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0081C4;
+    background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+    background-repeat: repeat-x;
+}
+.dropdown-menu > li > a {
+    color: black;
+}
+
+.nav-pills > li.active > a{
+    background-color: rgba(0,0,0,0.2);
+}
+
+#content{
+    width: 90%;
+    margin: 150px auto 0 auto; 
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+.sanpham-box{
+    border: 1px solid #000;
+    height: 300px;
+}
+
