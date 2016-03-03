@@ -18,6 +18,9 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     
     <title><?= Html::encode($this->title) ?></title>
+    <meta name="description" content="Các công trình thiết bị công nghệ sản xuất rượu chất lượng cao, chưng cất tinh dầu và chiết xuất dược liệu">
+    <meta name="keywords" content="Các công trình thiết bị công nghệ sản xuất rượu chất lượng cao, chưng cất tinh dầu và chiết xuất dược liệu">
+    <meta name="author" content="Nguyễn Văn Quang">
     <?php $this->head() ?>
 </head>
 <?php $this->beginBody() ?>
