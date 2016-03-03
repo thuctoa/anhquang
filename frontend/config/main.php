@@ -14,6 +14,29 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'homeUrl' => '/',
     'components' => [
+        'assetManager' => [
+            'class' => 'yii\web\AssetManager',
+            'appendTimestamp' => true,
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'js' => [
+                        'jquery.min.js'
+                    ]
+                ],
+                'yii\bootstrap\BootstrapAsset' => [
+                    'css' => [
+                        'css/bootstrap.min.css',
+                    ]
+                ],
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => [ 
+                        'js/bootstrap.min.js',
+                    ]
+                ],
+               // 'yii\widgets\ActiveFormAsset' => false,
+               // 'yii\validators\ValidationAsset' => false,
+               ],
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
