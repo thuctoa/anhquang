@@ -4,8 +4,6 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use kartik\nav\NavX;
@@ -18,6 +16,7 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
+    
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
@@ -25,7 +24,9 @@ AppAsset::register($this);
     <div class="wrap">
         <div class="top">
             <div class="container">
-                <img src="/img/logo-nav.png" alt="Máy thiết bị công nghệ">
+                <h1 class="tentrungtam">
+                    <?= Html::encode(\Yii::$app->name) ?>
+                </h1>
             </div>
             <?= 
                 NavX::widget([
@@ -147,63 +148,65 @@ AppAsset::register($this);
         </div>
         
         <div class="content" id="content">
-<!--            <div class="slide">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                   Indicators 
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                  </ol>
-
-                   Wrapper for slides 
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="/img/banner1.jpg" alt="Chania" width="460" height="345">
-                    </div>
-
-                    <div class="item">
-                      <img src="/img/banner2.jpg" alt="Chania" width="460" height="345">
-                    </div>
-
-                    <div class="item">
-                      <img src="/img/banner3.jpg" alt="Flower" width="460" height="345">
-                    </div>
-
-                    <div class="item">
-                      <img src="/img/banner4.jpg" alt="Flower" width="460" height="345">
-                    </div>
-                  </div>
-
-                   Left and right controls 
-                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-               </div>-->
-            <div >
             <?php 
-                Yii::$app->name = "Máy thiết bị công nghệ";
                 echo Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                 ]); 
             ?>
-            </div>
+            
             <?= $content ?>
         </div>
         
     </div>
     <footer class="footer">
-        <div class="container">
-            <span id="chuyentoike">
-                &copy; <?= \Yii::$app->name.' '.date('Y') ?>
-            </span>
+        <div class="footer-left">
+            <div class="vcard">
+                <span class="fn org">
+                    <?=Html::encode( \Yii::$app->name) ?>
+                </span> 
+                  <div class="adr"> 
+                      Địa chỉ:
+                     <span class="street-address">Số 196 - đường Thân Nhân Trung - Bích Động</span>-
+                     <span class="locality">Việt Yên</span> - 
+                     <span class="region"> Bắc Giang</span>.
+                  </div>   
+                  <span class="geo">
+                     <span class="latitude">
+                        <span class="value-title" title="21.2758089"></span>
+                     </span>
+                     <span class="longitude">
+                        <span class="value-title" title="106.0972803"></span>
+                     </span>
+                  </span>
+                    Điện thoại cố định: <span class="tel">024 035 03 999</span>
+                    <br>
+                    Điện thoại di động: <span class="tel">0973 58 77 59</span>
+                    
+                <br>Website: 
+                <a href="http://maythietbicongnghe.com/" class="url">http://maythietbicongnghe.com</a> 
+            </div>
+        </div>
+        <div class="footer-right">
+            <ul class="ul-right">
+                <li>
+                    <a href="#">Rượu </a>
+                </li>
+                <li>
+                    <a href="#">Hóa học </a>
+                </li>
+                <li>
+                    <a href="#">Thực phẩm </a>
+                </li>
+                <li>
+                    <a href="#">Sinh học </a>
+                </li>
+                <li>
+                    <a href="#">Dược phẩm </a>
+                </li>
+                <li>
+                    <a href="#">Môi trường </a>
+                </li>
+            </ul>
         </div>
     </footer>
 

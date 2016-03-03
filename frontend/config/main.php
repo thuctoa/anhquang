@@ -10,6 +10,7 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'name'=>'Trung tâm thiết kế chế tạo và chuyển giao thiết bị công nghệ cao Việt Nam',
     'controllerNamespace' => 'frontend\controllers',
     'homeUrl' => '/',
     'components' => [
