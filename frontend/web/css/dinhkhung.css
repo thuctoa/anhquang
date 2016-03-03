@@ -70,4 +70,5 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-size: 20px;
     text-transform: uppercase;
     color: blue;
+    padding-left: 15px;
 }

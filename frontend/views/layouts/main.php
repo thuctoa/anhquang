@@ -23,11 +23,10 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
     <div class="wrap">
         <div class="top">
-            <div class="container">
-                <h1 class="tentrungtam">
-                    <?= Html::encode(\Yii::$app->name) ?>
-                </h1>
-            </div>
+            <h1 class="tentrungtam">
+                <?= Html::encode(\Yii::$app->name) ?>
+            </h1>
+            
             <?= 
                 NavX::widget([
                     'options'=>['class'=>'nav nav-pills menu'],
