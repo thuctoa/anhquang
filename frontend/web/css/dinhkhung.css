@@ -3,7 +3,6 @@
     position: fixed;
     top: 0;
     background-color: #FFF;
-    
     width: 100%;
 }
 
@@ -44,7 +43,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-top: 0;
 }
 .sanpham-box{
-    border: 1px solid #000;
     height: 300px;
 }
 .footer-left{
@@ -72,4 +70,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color: blue;
     padding: 20px;
     padding-left: 15px;
+}
+.theh2{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+.theh3{
+    font-size: 16px;
 }

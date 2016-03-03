@@ -165,9 +165,10 @@ AppAsset::register($this);
                 </span> 
                   <div class="adr"> 
                       Địa chỉ:
-                     <span class="street-address">Số 196 - đường Thân Nhân Trung - Bích Động</span>-
+                     <span class="street-address">
+                         Số 196 - đường Thân Nhân Trung - Bích Động</span>-
                      <span class="locality">Việt Yên</span> - 
-                     <span class="region"> Bắc Giang</span>.
+                     <span class="region"> Bắc Giang</span>
                   </div>   
                   <span class="geo">
                      <span class="latitude">
@@ -177,6 +178,10 @@ AppAsset::register($this);
                         <span class="value-title" title="106.0972803"></span>
                      </span>
                   </span>
+                    Chuyên gia Thiết bị Công nghệ - Giám Đốc Trung tâm: GV.ThS. Nguyễn Văn Quang 
+                    <br>
+                    Email: quanghc43bkhn@gmail.com
+                    <br>
                     Điện thoại cố định: <span class="tel">024 035 03 999</span>
                     <br>
                     Điện thoại di động: <span class="tel">0973 58 77 59</span>
